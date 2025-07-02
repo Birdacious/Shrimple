@@ -4,23 +4,16 @@ Key considerations were that it wasn't tailored for English, as this is mostly f
 """
 
 entry_strokes={
-    #just use this top one, rewrite to whatever you wanna use
-
-    "SHREUFRPL" : {"prefix":"",
+    "HR"        : {"prefix":"",
                    "suffix":""},
-
-    "KWR*"      : {"prefix":"",
-                   "suffix":""},
-
-    "KWR"       : {"prefix":"{^}",
-                   "suffix":""},
+    #"SHREUFRPL" : {"prefix":"",
+    #               "suffix":""},
 
     "TPH*"      : {"prefix":"{-|}", #capitalise first letter
                    "suffix":""},
 
     "KAPS"      : {"prefix":"{mode:caps}", #capitalise everything
                    "suffix":"{mode:reset}"}
-
 }
 
 #dedicated key settings:
@@ -35,83 +28,103 @@ joiner_strokes={ #If Shrimple automatically exits, maybe you wanna use KWR to st
 make_starter_letters_have_left_to_right_priority = True
 starter_letter={
     "" : "",
-
     "^":"{^^}",
 
-    "S" : "s",
-    "STK": "dis",
-    "STKPW": "z",
-    "*SKP": "&",
-    "SKWR": "j",
-    "SKHR": "shr", #Josiah theory
-    "SH" : "sh",
-    "SHR" : "sl", #Josiah theory
-    "SR" : "v",
+    # A        a
+    "PW":     "b",
+    "KR":     "c",
+    "TK":     "d",
+    # E        e
+    "TP":     "f",
+    "TKPW":   "g",
+    "H":      "h",
+    # EU       i
+    "SKWR":   "j",
+    "K":      "k",
+    "HR":     "l", # If alone, exits Shrimple.
+    "PH":     "m",
+    "TPH":    "n",
+    # O        o
+    "P":      "p",
+    "KW":     "q",
+    "R":      "r",
+    "S":      "s",
+    "T":      "t",
+    # U        u
+    "SR":     "v",
+    "W":      "w",
+    "KP":     "x",
+    "KWR":    "y",
+    "STKPW":  "z",
 
-    "T" : "t",
-    "TK": "d",
-    "TKPW":"g",
-    "TKR": "dr",
-    "TP": "f",
-    "TPH": "n",
+    "PWHR":   "bl",
+    "PWR":    "br",
+    "KH":     "ch",
+    "KHR":    "cl",
+    #"KR":    "cr", # TODO: this is common enough that maybe should change the fingerspelling of c
+    "TKHR":   "del",
+    "TKR":    "dr",
+    "TPHR":   "fl",
+    "TPR":    "fr",
+    "TKPWHR": "gl",
+    "TKPWR":  "gr",
+    #"KL":    "kl",
+    #"KR":    "kr",
+    "PHR":    "pl",
+    "PR":     "pr",
+    "KWHR":   "qu", # meh idk
+    #"KW":    "qu",
+    "SKR":    "sc",
+    #"SKR":   "scr", # TODO: this is common enough that maybe should change the fingerspelling of c
+    "SH":     "sh",
+    "SKHR":   "shr", #Josiah theory
+    "SK":     "sk",
+    "SHR":    "sl",  #Josiah theory
+    "SPH":    "sm",
+    "STPH":   "sn",
+    "SP":     "sp",
+    "SPR":    "spr",
+    "SPHR":   "spl",
+    "SKW":    "squ",
+    "ST":     "st",
+    "STR":    "str",
+    "THR":    "thr",
+    "TR":     "tr",
 
-    "K":"k",
-    "KP":"x",
-    "KW":"q",
-    "KWH":"y",
-    "KWR":"",
-    "KH":"ch",
-    "KR":"c",
-
-    "P":"p",
-    "PW":"b",
-    "PH":"m",
-    "PHR":"pl", #conflict with mr
-
-    "W":"w",
-
-    "H":"h",
-    "HR":"l",
-
-    "R":"r"
+    # TODO: symbols
 }
-
-
 
 vowels={
     "-":"",
-    
     "":"",
 
-    "*A":"u",
-    "*AO":"i",
-    "*AOEU":"uy",
-    "*AOEU":"uoy",
-    "*AEU":"ay",
-    "*O":"e",
-    "*OEU":"oy",
-    "*OE":"ow",
-    "*OU":"ow",
-     #"*EU":"y",
+    "A":    "a",
+    "O":    "o",
+    "E":    "e",
+    "U":    "u",
 
-    "A"   :"a",
-    "AO"  :"oo",
-    "AOE" :"ee",
-    "AOEU":"i[e]",
-    "AOU" :"u[e]",
-    "AE"  :"ea",
-    "AEU" :"a[e]",
-    "AU"  :"au",
+    "EU":   "i",
+    #"*EU": "eu",
+    "*EU":  "y",
+    "AEU":  "ai",
+    "*AEU": "ay",
+    "OEU":  "oi",
+    "*OEU": "oy",
 
-    "O"   :"o",
-    "OE"  :"o[e]",
-    "OEU" :"oi",
-    "OU"  :"ou",
+    "AO":   "oo",
+    "AE":   "ea",
+    "AOE":  "ee",
 
-    "E"   :"e",
-    "EU"  :"i",
+    "*OE":  "ow",
+    "*OU":  "ow",
 
-    "U"   :"u"
+    "AOEU": "i[e]",
+    "AOU":  "u[e]",
+    "AEU":  "a[e]",
+    "AU":   "au",
+
+    "OE":   "o[e]",
+    "OU":   "ou",
 }
 
 make_ender_letters_have_left_to_right_priority = True
@@ -119,74 +132,89 @@ ender_letter={
     "":"",
     #"*":"", #asterisk on its own is invalid
 
+    # A      a
+    "B":    "b",
+    "RBG":  "c", # meh
+    #"SZ":  "c", # maybe?
+    "SZ":   "ss",
+    "D":    "d",
+    # E      e
+    "F":    "f",
+    "G":    "g",
+    "RB":   "h",
+    #"RB":  "sh", # unless AU to make it rb carb barb
+    # EU     i
+    "PBLG": "j",
+    "BG":   "k",
+    "L":    "l",
+    "PL":   "m",
+    "PB":   "n",
+    # O      o
+    "P":    "p",
+    # ???   "q",
+    "R":    "r", # If alone, repeats last stroke.
+    "S":    "s",
+    "T":    "t",
+    # U      u
+    "FB":   "v",
+    # ???   "w",
+    "BGS":  "x",
+    "Z":    "z",
+
+    "#":    "0", # Actually won't work as Shrimple is now, instead consumed by Shrimple overrides dictionary
+    "#L":   "1", # Also in Shrimple overrides dictionary
+    "*LG":  "2", # L + u
+    #"*LG": "lk",
+    "PLZ":  "3", # L + ur
+    "PLSZ": "4", # L + l
+    "*L":   "5",
+    "LT":   "6",
+    #"LT":  "lt",
+    "LG":   "7",
+    #"LG":  "lg",
+    "LS":   "8",
+    #"LS":  "ls",
+    "LD":   "9",
+    #"LD":  "ld",
+
+    "FP":"ch",
+    "FT":"ft",
     "*FT":"st",
-    "*FTD":"sted",
+
+    "*T":"th",
+    "TD":"ted",
+    "*TD":"thed",
+    "TS":"ts",
+
+    #"*PL":"mp", # IDK, I need to think about -mp more. FRP or *PL?
+    #"FRPL":"mpl",
+    #"FRB":"mb",
+    #"FRL":"ml",
+    #"FRBL":"mbl",
+    "FRPB":"rch",
+
+    "PBG":"ng",
     "*PBG":"nk",
-    "*PZ":"h",
     "*BG":"ck",
     "*BGD":"cked",
-    "*LG":"lk",
-    "*T":"th",
-    "*TD":"thed",
-    "*S":"c[e]",
-    "*SZ":"c",
-    "*D":"[y]",
-    "*Z":"z",
-
-    "F":"f",
-    "FRP":"mp",
-    "FRPB":"rch",
-    "FRPBG":"nk",
-    "FRPL":"mpl",
-    "FRB":"mb",
-    "FRL":"ml",
-    "FRBL":"mbl",
-    "FP":"ch",
-    "FPL":"",
-    "FB":"v",
-    "FT":"ft",
-
-    "R":"r", 
-    "RB":"sh", #unless AU to make it rb carb barb
+    "BGT":"cket",
+    "BGTS":"ckets",
     "RBG":"rk",
     "RBGT":"rket",
     "RBGTS":"rkets",
 
-    "P":"p",
-    "PB":"n",
-    "PBLG":"j",
-    "PBG":"ng",
-    "PL":"m",
-
-    "B":"b",
-    "BG":"k",
-    "BGT":"cket",
-    "BGTS":"ckets",
-    "BGS":"x",
-
-    "L":"l",
-
-    "G":"g",
     "GT":"ght",
     "GTS":"ghts",
-
-    "T":"t",
-    "TS":"ts",
-    "TD":"ted",
-    "TZ":"",
-
-    "S":"s", #might be some logic here for c? Realtime uses `SZ` for c
-    #"SZ":"ss",
-
-    "D":"d",
-
-    "Z":"[s]",
-
 }
 
 
 
 strokes_you_can_use_to_exit_shrimple_with=[
+
+    #"SHREUFRPL", # "Shrimple" again
+    "HR",        #
+    "PHO-UPL",   # Mouse mode
+    "PHRO-LG",   # Toggle Plover
 
     #punctuation
     "TK-LS",    #no space
@@ -229,38 +257,17 @@ strokes_you_can_use_to_exit_shrimple_with=[
     "STPH-FR",
     "STPH-LG",
     "PW-FP",
-    
+
 ]
 
 left_finger_chords_you_can_use_to_exit_shrimple_with={
-
-    #Emily's stuff (might also have to do this for my phrasing too?)
-    "SKWH",
-
-
+    "STKPWHR", # Modifier mode
 }
 
-left_hand_chords_you_can_use_to_exit_shrimple_with={
-
-
-}
-
-
-right_finger_chords_you_can_use_to_exit_shrimple_with={
-
-    #Emily's stuff (might also have to do this for my phrasing too?)
-    "LTZ"
-    "RLTZ"
-}
-
-left_finger_chords_you_can_use_during_the_final_stroke_to_exit_shrimple_with=[
-    #"KWR"
-]
-
-right_finger_chords_you_can_use_during_the_final_stroke_to_exit_shrimple_with=[
-    #"TZ"
-]
-
+left_hand_chords_you_can_use_to_exit_shrimple_with={}
+right_finger_chords_you_can_use_to_exit_shrimple_with={}
+left_finger_chords_you_can_use_during_the_final_stroke_to_exit_shrimple_with=[]
+right_finger_chords_you_can_use_during_the_final_stroke_to_exit_shrimple_with=[]
 
 dedicated_key_you_can_use_during_the_final_stroke_to_exit_shrimple_with = "$"
 
@@ -355,7 +362,7 @@ numbers_to_letters = {
     "0": "O"
     }
 
-#when the hash key is pressed, it interferes with the letters, I'm not interested in that, so I'm just undoing that here
+#when the hash key is pressed, it interferes with the letter, I'm not interested in that, so I'm just undoing that here
 def aericks_denumberizer(old_outline):
 
     old_strokes = old_outline.split("/")
@@ -392,16 +399,6 @@ def slices(s, n):
 def star_positions(parts):
     for i in range(len(parts)):
         yield ["*" + s if i == j else s for j, s in enumerate(parts)]
-
-# print([x for x in slices("#STKPWHR", 1)])
-# # print([[pos for pos in star_positions(x)] for x in slices("#STKPWHR", 1)])
-# print([x for x in slices("#STKPWHR", 2)])
-# # print([[pos for pos in star_positions(x)] for x in slices("#STKPWHR", 2)])
-# print([x for x in slices("#STKPWHR", 3)])
-# # print([[pos for pos in star_positions(x)] for x in slices("#STKPWHR", 3)])
-# print([x for x in slices("S", 1)])
-# print([x for x in slices("S", 2)])
-
 
 #this function constructs the stroke recursively, if the stroke isn't found, then a match using 2 strokes is searched for, then 3, then 4 etc, etc
 def construct_stroke_2(target_chord, chord_dictionary, has_asterisk = False):
@@ -589,12 +586,3 @@ print(("DIFFERENCES: ", {
         if (results := (test(x), test(x,  construct_stroke=construct_stroke_2)))
         if str(results[0]) != str(results[1])
         }))
-# print(lookup(("+KAPZ","KWROU")))
-# print(lookup(("+WA*U")))
-# print(lookup(("KAPS", "STA*RTD")))
-# print(lookup(("KWR", "A*")))
-# print(lookup(("KAPS", "STKHRA*RTD")))
-# print(lookup(("KAPS", "WA*TD")))
-# print(lookup(("KAPS", "WA*TD", "KWRAL")))
-# print(lookup(("KAPS", "WA*TD", "KWRAL", "PAL")))
-

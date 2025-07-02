@@ -1,3 +1,10 @@
+# This fork
+
+My version of Shrimple, for my gamepad-based system. This version focusees less on orthospelling speed, and more on the ability to type numbers and symbols (on the RHS) which is useful for programming — for vim motions, and for faster two-handed fingerspelling of short variable names. Not meant to be the primary mode for programming, a specialized dictionary for each programming language is better. This is just a supplement.
+Intended to be SOLO_DICT'd (using plover-dict-commands) alongside the override dictionary just above it.
+
+Below is the original Shrimple README:
+
 # Shrimple
 Shrimple: a Python dictionary you can use to run your orthospelling theory
 
