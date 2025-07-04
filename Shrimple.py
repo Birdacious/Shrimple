@@ -61,7 +61,7 @@ starter_letter={
     "PWR":    "br",
     "KH":     "ch",
     "KHR":    "cl",
-    #"KR":    "cr", # TODO: this is common enough that maybe should change the fingerspelling of c
+    #"KR":    "cr",  # TODO: this is common enough that maybe should change the fingerspelling of c
     "TKHR":   "del",
     "TKR":    "dr",
     "TPHR":   "fl",
@@ -72,26 +72,37 @@ starter_letter={
     #"KR":    "kr",
     "PHR":    "pl",
     "PR":     "pr",
-    "KWHR":   "qu", # meh idk
+    "KWHR":   "qu",  # meh idk
     #"KW":    "qu",
     "SKR":    "sc",
     #"SKR":   "scr", # TODO: this is common enough that maybe should change the fingerspelling of c
-    "SH":     "sh",
-    "SKHR":   "shr", #Josiah theory
-    "SK":     "sk",
-    "SHR":    "sl",  #Josiah theory
-    "SPH":    "sm",
+    #"SH":    "sh",  # Overridden by "8"
+    "SKHR":   "shr", # Josiah theory
+    #"SK":    "sk",  # Overriden by "2"
+    #"SHR":   "sl",  # Josiah theory; overridden by "5"
+    #"SPH":   "sm",  # Overridden by "4"
     "STPH":   "sn",
-    "SP":     "sp",
+    #"SP":    "sp",  # Overriden by "3"
     "SPR":    "spr",
     "SPHR":   "spl",
     "SKW":    "squ",
-    "ST":     "st",
+    #"ST":    "st",  # Overridden by "6"
     "STR":    "str",
     "THR":    "thr",
     "TR":     "tr",
 
-    # TODO: symbols
+    # TODO add @ key to lhs, to differentiate lhs and rhs "#"
+    # As it is now, can't type "0" or "1" two-handed.
+    #"@":    "0",
+    #"@S":   "1",
+    "SK":    "2",
+    "SP":    "3",
+    "SPH":   "4",
+    "SHR":   "5",
+    "ST":    "6",
+    "STPKW": "7",
+    "SH":    "8",
+    "STK":   "9",
 }
 
 vowels={
@@ -161,24 +172,8 @@ ender_letter={
     "BGS":  "x",
     "Z":    "z",
 
-    "#":    "0", # Actually won't work as Shrimple is now, instead consumed by Shrimple overrides dictionary
-    "#L":   "1", # Also in Shrimple overrides dictionary
-    "*LG":  "2", # L + u
-    #"*LG": "lk",
-    "PLZ":  "3", # L + ur
-    "PLSZ": "4", # L + l
-    "*L":   "5",
-    "LT":   "6",
-    #"LT":  "lt",
-    "LG":   "7",
-    #"LG":  "lg",
-    "LS":   "8",
-    #"LS":  "ls",
-    "LD":   "9",
-    #"LD":  "ld",
-
-    "FP":"ch",
-    "FT":"ft",
+    #"FP":"ch", # Overridden by "3"
+    #"FT":"ft", # Overridden by "6"
     "*FT":"st",
 
     "*T":"th",
@@ -205,6 +200,17 @@ ender_letter={
 
     "GT":"ght",
     "GTS":"ghts",
+
+    "#":   "0",
+    "#F":  "1",
+    "FBG": "2",
+    "FP":  "3",
+    "FPH": "4",
+    "FL":  "5",
+    "FT":  "6",
+    "FG":  "7",
+    "FS":  "8",
+    "FD":  "9",
 }
 
 

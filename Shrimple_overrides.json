@@ -1,4 +1,51 @@
 {
-"#":    "0",
-"#L":   "1"
+
+"comment": "RHS lone spellings are symbols. If you want to type a lone letter, use LHS.",
+"#":   "0",
+"-BG": "*",
+"-P":  ".",
+"-PL": "'",
+"-T":  "<",
+"-G":  "-",
+"-S":  "_",
+"-D":  ",",
+
+"-F":  " ",
+
+"comment2": "RHS lone spellings + -L. TODO: #L is a free space, just repeating for \" for now.",
+"#L":    "\"",
+"-BLG":  "^",
+"-PL":   "!",
+"-PLSZ": "(",
+"-LT":   ")",
+"-LG":   "|",
+"-LS":   "$",
+"-LD":   "/",
+
+"-FL":   "{#Tab}",
+
+"comment3": "RHS lone double-taps",
+"HA*ERB":   "#",
+"OEU":      "/",
+"STPH-FPT": ":",
+"PSDZ":     "\"",
+"PBGSDZ":   ">",
+"PHR*US":   "+",
+"KW*":      "=",
+"STPH*FPT": ";",
+
+"comment4": "RHS lone double-taps + -L",
+"HA*ERBL":   "@",
+"OEUL":      "%",
+"STPH-FPLT": "`",
+"PLSDZ":     "[",
+"PBLGSDZ":   "]",
+"PHR*ULS":   "&",
+"KW*L":      "~",
+"STPH*FPLT": "?",
+
+"comment5": "RHS lone cross-deadzone taps + -L",
+"PLT": "\{",
+"PBT": "\}"
+
 }
