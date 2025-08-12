@@ -12,53 +12,55 @@ exit_strokes={
     "HR"
 }
 overrides={
-  # RHS lone spellings are symbols. If you want to type a lone letter, use LHS.
-  "#":   "0",
-  "-BG": "*",
-  "-P":  ".",
-  "-PL": "'",
-  "-T":  "<",
-  "-G":  "-",
-  "-S":  "_",
-  "-D":  ",",
+  "R-R": "\n",
 
-  "-F":  " ",
+  # LHS lone spellings are symbols. If you want to type a lone letter, use LHS.
+  "#":    "0",
+  "K":    "*",
+  "P":    ".",
+  "PH":   "'",
+  "T":    "<",
+  "TPKW": "-",
+  "H":    "_",
+  "TK":   ",",
 
-  # RHS lone spellings + -L. NOTE: FR is an extra space.
-  "#-L":   "{#Tab}",
-  "*LG":   "^",
-  "-PLZ":  "!",
-  "-PLSZ": "(",
-  "-LT":   ")",
-  "-LG":   "|",
-  "-LS":   "$",
-  "-LD":   "/",
+  "S-":   " ",
 
-  "-FR":   " ",
+  # LHS lone spellings + HR-. NOTE: #HR is extra.
+  "#HR":    "{#Tab}",
+  "KHR":    "^",
+  #"PHR":    "!",
+  "PHR":    ")", # TODO make combo stroke for PH + HR
+  "THR":    "(",
+  "TPKWHR": "|",
+  #"HR":     "$", # TODO: make combo stroke for H + HR
+  "TKHR":   "/",
 
-  # RHS lone double-taps
+  "SHR":   "{#Tab}",
+
+  # LHS lone double-taps
   "HA*ERB":   "#",
   "OEU":      "/",
   "STPH-FPT": ":",
   "KR*GS":    "\"",
-  "TKPWR*PB": ">",
-  "PHR*US":   "+",
+  "W":        ">",
+  "PR*US":    "+",
   "KW*":      "=",
   "STPH*FPT": ";",
 
-  # RHS lone double-taps + -L
-  "HA*ERBL":   "@",
-  "OEUL":      "%",
-  "STPH-FPLT": "`",
-  "KR*LGS":    "[",
-  "TKPWR*PBL": "]",
-  "PHR*ULS":   "&",
-  "KW*L":      "~",
-  "STPH*FPLT": "?",
+  # LHS lone double-taps + -HR
+  "HRA*ERB":   "@",
+  "HROEU":     "%",
+  "STPHR-FPT": "`",
+  "KHR*GS":    "[",
+  "WHR":       "]",
+  "PHR*US":    "&",
+  "KWHR*":     "~",
+  "STPHR*FPT": "?",
 
-  # RHS lone cross-deadzone taps + -L
-  "-PLT": "\\{",
-  "-PBLT": "\\}"
+  # LHS lone cross-deadzone taps + -HR
+  "SPWHR": "\\{",
+  "TWHR":  "\\}"
 
 }
 starters={
@@ -200,7 +202,7 @@ enders={
     "T":    "t",
     # U      u
     "FB":   "v",
-    # ???   "w",
+    "PSDZ": "w",
     "BGS":  "x",
     "Z":    "z",
 
