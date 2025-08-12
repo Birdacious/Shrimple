@@ -1,4 +1,4 @@
-entry_strokes={ # TODO maybe
+entry_strokes={ # TODO maybe implement later
     "HR"        : {"prefix":"",
                    "suffix":""},
 
@@ -24,17 +24,17 @@ overrides={
 
   "-F":  " ",
 
-  # RHS lone spellings + -L. TODO: #L is a free space, just repeating for \" for now.
-  "#-L":    "\"",
-  "*LG":  "^",
-  "-PLZ":   "!",
+  # RHS lone spellings + -L. NOTE: FR is an extra space.
+  "#-L":   "{#Tab}",
+  "*LG":   "^",
+  "-PLZ":  "!",
   "-PLSZ": "(",
   "-LT":   ")",
   "-LG":   "|",
   "-LS":   "$",
   "-LD":   "/",
 
-  "-FR":   "{#Tab}",
+  "-FR":   " ",
 
   # RHS lone double-taps
   "HA*ERB":   "#",
