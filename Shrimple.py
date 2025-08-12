@@ -26,21 +26,21 @@ overrides={
 
   "S-":   " ",
 
-  # LHS lone spellings + HR-. NOTE: #HR is extra.
+  # LHS lone spellings + HR-
   "#HR":    "{#Tab}",
   "KHR":    "^",
   #"PHR":    "!",
-  "PHR":    ")", # TODO make combo stroke for PH + HR
+  "PHR":    ")", # TODO make combo stroke for PH- + HR-
   "THR":    "(",
   "TPKWHR": "|",
-  #"HR":     "$", # TODO: make combo stroke for H + HR
+  #"HR":     "$", # TODO: make combo stroke for H- + HR-
   "TKHR":   "/",
 
-  "SHR":   "{#Tab}",
+  #"SHR": "", # Overridden by LHS "5"
 
   # LHS lone double-taps
   "HA*ERB":   "#",
-  "OEU":      "/",
+  "OEU":      "{#Escape}",
   "STPH-FPT": ":",
   "KR*GS":    "\"",
   "W":        ">",
@@ -48,7 +48,7 @@ overrides={
   "KW*":      "=",
   "STPH*FPT": ";",
 
-  # LHS lone double-taps + -HR
+  # LHS lone double-taps + HR-
   "HRA*ERB":   "@",
   "HROEU":     "%",
   "STPHR-FPT": "`",
@@ -58,7 +58,7 @@ overrides={
   "KWHR*":     "~",
   "STPHR*FPT": "?",
 
-  # LHS lone cross-deadzone taps + -HR
+  # LHS lone cross-deadzone taps + HR-
   "SPWHR": "\\{",
   "TWHR":  "\\}"
 
